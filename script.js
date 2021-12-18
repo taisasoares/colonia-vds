@@ -16,3 +16,7 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+function inscrevase() {
+  alert("Esse botão manda para o formulário de inscrição");
+}

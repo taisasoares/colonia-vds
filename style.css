@@ -25,6 +25,14 @@ header {
 
   background: #fdf6e2;
   overflow: hidden;
+
+  clip-path: circle(150% at 50% -22%);
+}
+
+@media only screen and (min-width: 360px) {
+  header {
+    clip-path: circle(150% at 50% -28%);
+  }
 }
 
 #backgroundHeader {
@@ -32,17 +40,27 @@ header {
   z-index: 0;
   width: 130%;
   bottom: 0px;
+
+  transition: 0.5s;
 }
 
 @media only screen and (min-width: 440px) {
   #backgroundHeader {
     width: 100%;
   }
+
+  header {
+    clip-path: circle(150% at 50% -48%);
+  }
 }
 
 @media only screen and (min-width: 640px) {
   #backgroundHeader {
     width: 80%;
+  }
+
+  header {
+    clip-path: circle(150% at 50% -66%);
   }
 }
 
@@ -108,7 +126,6 @@ header {
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -186,4 +203,43 @@ button {
 button:hover {
   transform: scale(1.05);
   background-color: #f096b1;
+}
+
+#agulhaHeader {
+  position: absolute;
+  width: 48px;
+  height: 124px;
+  right: -8px;
+  top: -8px;
+
+  background: url(agulha.png);
+  transform: rotate(-52deg);
+}
+
+#carretelHeader {
+  position: absolute;
+  width: 48px;
+  height: 76px;
+  left: -6px;
+  top: 322px;
+  background: url(carretelM.png);
+  transform: rotate(12deg);
+
+  z-index: 1;
+}
+
+@media only screen and (min-width: 545px) {
+  #agulhaHeader {
+    width: 86px;
+    height: 174px;
+
+    transition: 0.5s;
+  }
+
+  #carretelHeader {
+    width: 76px;
+    height: 124px;
+
+    transition: 0.5s;
+  }
 }
