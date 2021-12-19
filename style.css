@@ -267,9 +267,7 @@ main {
 }
 
 .title {
-  padding-top: 8px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding: 8px 24px;
 
   color: #2f327d;
 }
@@ -347,6 +345,9 @@ main {
 }
 
 #principalImgCont {
+  width: 75%;
+  height: auto;
+
   margin-top: 48px;
 }
 
@@ -385,4 +386,36 @@ main {
 
 .blue2 {
   color: #6fbbbd;
+}
+
+.yellow {
+  color: #f6d46f;
+}
+
+.green {
+  color: #979b4b;
+}
+
+.imgCardsBeneficios {
+  width: 80%;
+  height: auto;
+}
+
+#titleBeneficios {
+  padding-top: 0;
+}
+
+.subtitleBeneficios {
+  margin-top: 32px;
+  margin-right: 24px;
+  margin-left: 24px;
+
+  color: #2f327d;
+}
+
+.descBeneficios {
+  margin: 8px 26px;
+  padding-bottom: 12px;
+
+  color: #696984;
 }
