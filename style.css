@@ -419,3 +419,20 @@ main {
 
   color: #696984;
 }
+
+.frase {
+  background-color: #c3f0f1;
+  margin-top: 48px;
+  margin-bottom: 26px;
+}
+
+#titleFrase {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 105%;
+
+  color: #303270;
+
+  margin: 26px;
+  padding: 12px 0;
+}
