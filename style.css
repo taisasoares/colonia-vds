@@ -47,10 +47,17 @@ header {
 @media only screen and (min-width: 440px) {
   #backgroundHeader {
     width: 100%;
+    top: 290px;
   }
 
   header {
     clip-path: circle(150% at 50% -48%);
+  }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 550px) {
+  header {
+    clip-path: circle(150% at 50% -40%);
   }
 }
 
@@ -126,6 +133,7 @@ header {
     flex-direction: column;
     background-color: #fff;
     width: 100%;
+
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -170,7 +178,7 @@ header {
   margin-bottom: 12px;
 }
 
-#ferias {
+.pink {
   color: #f096b1;
 }
 
@@ -242,4 +250,87 @@ button:hover {
 
     transition: 0.5s;
   }
+}
+
+main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+
+  overflow: hidden;
+}
+
+#titlePub {
+  padding-top: 8px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  color: #2f327d;
+}
+
+#descPub {
+  padding: 22px;
+  padding-bottom: 0;
+  margin: 0 12px;
+
+  color: #696984;
+}
+
+.cardSectionPub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardPub {
+  width: 75%;
+  height: auto;
+
+  margin-top: 58px;
+  padding-bottom: 34px;
+
+  background: #ffffff;
+  box-shadow: 0px 10px 14px 10px rgb(38 45 118 / 8%);
+  border-radius: 20px;
+
+  z-index: 0;
+}
+
+.iconCardPub {
+  width: 60px;
+  height: 60px;
+
+  margin-top: -26px;
+}
+
+.h3Pub {
+  width: 100%;
+  padding: 16px 50px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 105%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #2f327d;
+
+  z-index: 1;
+}
+
+.pPub {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #696984;
+  margin: 4px 18px;
 }
