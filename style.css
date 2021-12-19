@@ -460,3 +460,140 @@ main {
 
   color: #ffffff;
 }
+
+.fotos {
+  background-color: #ffe2ea;
+  padding: 26px 0;
+}
+
+#titleFotos {
+  margin-bottom: 26px;
+}
+
+.gallery {
+  width: 100vw;
+  min-height: 60px;
+  height: 500px;
+  max-height: 28vw;
+  overflow: hidden;
+}
+
+.gallery:before,
+.gallery:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 3;
+}
+
+.gallery:before {
+  left: 0;
+}
+
+.gallery:after {
+  right: 0;
+}
+
+.gallery__stream {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__item {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transition: 1s all ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px;
+}
+
+.gallery__item:nth-child(1) {
+  left: 0;
+  z-index: 1;
+  transform: translateX(-100%) scale(0.8);
+}
+
+.gallery__item:nth-child(2) {
+  left: 0;
+  z-index: 2;
+  transform: translateX(-50%) scale(0.8);
+}
+
+.gallery__item:nth-child(3) {
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) scale(1);
+}
+
+.gallery__item:nth-child(4) {
+  left: 100%;
+  z-index: 2;
+  transform: translateX(-50%) scale(0.8);
+}
+
+.gallery__item:nth-child(n + 5) {
+  left: 100%;
+  z-index: 1;
+  transform: scale(0.8);
+}
+
+/* Controllers */
+
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  z-index: 4;
+  margin-top: 18px;
+  width: 25%;
+  height: 140px;
+  cursor: pointer;
+}
+
+.gallery__prev {
+  transform: translateX(-10%) translateY(-8%) scale(0.8);
+  left: 0;
+}
+
+.gallery__next {
+  transform: translateX(-90%) translateY(-10%) scale(0.8);
+  left: 100%;
+}
+
+/* Backgrounds */
+
+.bg-1 {
+  background-image: url(/imagens/fotos/IMG_0509.jpg);
+}
+
+.bg-2 {
+  background-image: url(/imagens/fotos/IMG_0529.jpg);
+}
+
+.bg-3 {
+  background-image: url(/imagens/fotos/IMG_0537.jpg);
+}
+
+.bg-4 {
+  background-image: url(/imagens/fotos/IMG_0554.jpg);
+}
+
+.bg-5 {
+  background-image: url(/imagens/fotos/IMG_0561.jpg);
+}
+
+.bg-6 {
+  background-image: url(/imagens/fotos/IMG_0571.jpg);
+}
+
+.bg-7 {
+  background-image: url(/imagens/fotos/IMG_0596.jpg);
+}
