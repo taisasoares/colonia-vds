@@ -268,6 +268,7 @@ main {
 
 .title {
   padding: 8px 24px;
+  line-height: 105%;
 
   color: #2f327d;
 }
@@ -435,4 +436,27 @@ main {
 
   margin: 26px;
   padding: 12px 0;
+}
+
+#depoimentoHelena {
+  margin-top: 34px;
+
+  width: 80%;
+}
+
+#buttonDepoimentos {
+  position: relative;
+  top: -36px;
+  width: 290px;
+  height: 56px;
+
+  background-color: #f6d46f;
+  border-radius: 80px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
 }
