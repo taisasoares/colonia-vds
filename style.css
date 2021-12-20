@@ -470,130 +470,143 @@ main {
   margin-bottom: 26px;
 }
 
-.gallery {
+.footer {
   width: 100vw;
-  min-height: 60px;
-  height: 500px;
-  max-height: 28vw;
-  overflow: hidden;
+  background-color: #f8f8f8;
 }
 
-.gallery:before,
-.gallery:after {
+#line {
+  width: 80%;
+}
+
+#adress {
+  font-size: 14px;
+
+  margin: 24px 8px;
+}
+
+.slides {
+  padding: 0;
+  width: 100vw;
+  height: 50vh;
   display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 20%;
-  height: 100%;
-  z-index: 3;
-}
-
-.gallery:before {
-  left: 0;
-}
-
-.gallery:after {
-  right: 0;
-}
-
-.gallery__stream {
+  margin: 26px 0;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  height: 100%;
 }
 
-.gallery__item {
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide-container {
+  display: block;
+}
+
+.slide {
+  top: 0;
+  opacity: 0;
+  width: 100vw;
+  height: 50vh;
+  display: block;
   position: absolute;
-  width: 50%;
-  height: 100%;
-  transition: 1s all ease;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+
+  transform: scale(0);
+
+  transition: all 0.7s ease;
+}
+
+.slide img {
+  object-fit: cover;
+  width: 80%;
+  height: 300px;
   border-radius: 20px;
 }
 
-.gallery__item:nth-child(1) {
-  left: 0;
-  z-index: 1;
-  transform: translateX(-100%) scale(0.8);
-}
-
-.gallery__item:nth-child(2) {
-  left: 0;
-  z-index: 2;
-  transform: translateX(-50%) scale(0.8);
-}
-
-.gallery__item:nth-child(3) {
-  left: 50%;
-  z-index: 4;
-  transform: translateX(-50%) scale(1);
-}
-
-.gallery__item:nth-child(4) {
-  left: 100%;
-  z-index: 2;
-  transform: translateX(-50%) scale(0.8);
-}
-
-.gallery__item:nth-child(n + 5) {
-  left: 100%;
-  z-index: 1;
-  transform: scale(0.8);
-}
-
-/* Controllers */
-
-.gallery__prev,
-.gallery__next {
+.nav label {
+  width: 200px;
+  height: 100%;
+  display: none;
   position: absolute;
-  z-index: 4;
-  margin-top: 18px;
-  width: 25%;
-  height: 140px;
+
+  opacity: 0;
+  z-index: 9;
   cursor: pointer;
+
+  transition: opacity 0.2s;
+
+  color: #fff;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 380px;
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 
-.gallery__prev {
-  transform: translateX(-10%) translateY(-8%) scale(0.8);
-  left: 0;
+.slide:hover + .nav label {
+  opacity: 0.5;
 }
 
-.gallery__next {
-  transform: translateX(-90%) translateY(-10%) scale(0.8);
-  left: 100%;
+.nav label:hover {
+  opacity: 1;
 }
 
-/* Backgrounds */
-
-.bg-1 {
-  background-image: url(/imagens/fotos/IMG_0509.jpg);
+.nav .next {
+  right: 0;
 }
 
-.bg-2 {
-  background-image: url(/imagens/fotos/IMG_0529.jpg);
+input:checked + .slide-container .slide {
+  opacity: 1;
+
+  transform: scale(1);
+
+  transition: opacity 1s ease;
 }
 
-.bg-3 {
-  background-image: url(/imagens/fotos/IMG_0537.jpg);
+input:checked + .slide-container .nav label {
+  display: block;
 }
 
-.bg-4 {
-  background-image: url(/imagens/fotos/IMG_0554.jpg);
+.nav-dots {
+  width: 100%;
+  bottom: -324px;
+  height: 11px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
 }
 
-.bg-5 {
-  background-image: url(/imagens/fotos/IMG_0561.jpg);
+.nav-dots .nav-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #bdbdbd;
 }
 
-.bg-6 {
-  background-image: url(/imagens/fotos/IMG_0571.jpg);
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: #b03658;
 }
 
-.bg-7 {
-  background-image: url(/imagens/fotos/IMG_0596.jpg);
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: #b03658;
 }
