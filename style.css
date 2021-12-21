@@ -465,11 +465,138 @@ main {
 
 /* Section Depoimentos */
 
-#depoimentoHelena {
+#depoimento {
   margin-top: 34px;
 
   width: 80%;
 }
+
+/* Slides depoimentos */
+
+/* .slidesDeps {
+  padding: 0;
+  width: 100vw;
+  height: 50vh;
+  display: block;
+  margin: 26px 0;
+  position: relative;
+}
+
+.slidesDeps * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.slidesDeps input {
+  display: none;
+}
+
+.slideDep-container {
+  display: block;
+}
+
+.slideDep {
+  top: 0;
+  opacity: 0;
+  width: 100vw;
+  /* height: 50vh; */
+/* display: block;
+  position: absolute;
+  transform: scale(0);
+
+  transition: all 0.7s ease;
+}
+
+.slideDep img {
+  object-fit: cover;
+  width: 80%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.navDep label {
+  top: 20%;
+  width: 50%;
+  height: 60%;
+  display: none;
+  position: absolute;
+
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+
+  color: rgba(255, 255, 255, 0);
+  font-size: 16px;
+  text-align: center;
+  line-height: 16px;
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slideDep:hover + .navDep label {
+  opacity: 0.5;
+}
+
+.navDep label:hover {
+  opacity: 1;
+}
+
+.navDep .nextD {
+  right: 0;
+}
+
+input:checked + .slideDep-container .slideDep {
+  opacity: 1;
+
+  transform: scale(1);
+
+  transition: opacity 1s ease;
+}
+
+input:checked + .slideDep-container .navDep label {
+  display: block;
+}
+
+.navDep-dots {
+  width: 100%;
+  bottom: -324px;
+  height: 11px;
+  padding-top: 324px;
+  /* display: flex;
+  position: relative;
+  justify-content: center; */
+/* text-align: center;
+}
+
+.navDep-dots .navD-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #bdbdbd;
+}
+
+.navDep-dots .navD-dot:hover {
+  cursor: pointer;
+  background-color: #b03658;
+}
+
+input#dep-1:checked ~ .navDep-dots label#dep-dot-1,
+input#dep-2:checked ~ .navDep-dots label#dep-dot-2,
+input#dep-3:checked ~ .navDep-dots label#dep-dot-3,
+input#dep-4:checked ~ .navDep-dots label#dep-dot-4 {
+  background: #b03658;
+} */
 
 #buttonDepoimentos {
   position: relative;
@@ -624,7 +751,9 @@ input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8 {
   background: #b03658;
 }
 
@@ -660,7 +789,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 #motivos {
-  padding: 20px 22px;
+  padding: 26px 36px;
   margin-top: 8px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -679,7 +808,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 #buttonInvest {
-  width: 236px;
+  width: 260px;
   height: 46px;
 
   font-size: 16px;
