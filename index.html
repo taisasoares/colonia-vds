@@ -4,7 +4,7 @@
     <title>Colônia de Férias - VDS</title>
     <link
       rel="icon"
-      href="/imagens/material/Vestida de Sonhos Logo abreviação.png"
+      href="/imagens/material/vdsLogo.png"
       type="image/icon type"
     />
 
@@ -16,6 +16,9 @@
     <meta name="author" content="Taisa Soares" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
@@ -317,24 +320,138 @@
         </ul>
       </section>
 
-      <br />
-      <br />
-      <br />
+      <section class="professoras">
+        <h2 class="title" id="titleProfs">
+          Nosso time de <span class="blue2">super professoras</span>
+        </h2>
 
-      <!-- Aqui daria pra ser um footer mesmo, usando a classe footer fora da main, da mesma forma que o header -->
-      <section role="contentinfo" class="footer">
-        <div id="adress">
-          <img id="line" src="/imagens/imgBody/Line.svg" />
-          <br />
-          <br />
-          <p>© Copyright Vestida de Sonhos 2022</p>
-          <p>
-            SCLRN 713 - Bloco D, Apartamento 20, Asa Norte - Brasília/DF CNPJ:
-            21.120.048/0001-03
-          </p>
-        </div>
+        <img id="marcalImg" src="/imagens/imgBody/marcalImg.svg" />
+        <h3 class="title green">Larissa Marçal</h3>
+        <p class="desc descProfs">
+          Larissa Marçal é costureira há 8 anos. <br/><br/>
+          Técnica em vestuário, e graduada em Design de Moda pelo Instituto Federal de Brasília. Também
+          é professora de modelagem e costura na Vestida de Sonhos há mais de 2
+          anos, e atua em seu ateliê no segmento moda festa. <br/><br/>
+          A costura fez com
+          que ela se descobrisse como profissional, tornando-a apaixonada pelo
+          universo do vestuário. Esse sentimento que a motiva a costurar, bordar
+          e pintar os mais belos sonhos de sua vida.
+        </p>
+
+        <img id="freitasImg" src="/imagens/imgBody/freitasImg.svg" />
+        <h3 class="title green">Larissa Freitas</h3>
+        <p class="desc descProfs">
+          Larissa Freitas é costureira, modelista e figurinista. <br/><br/>
+          Se interessou
+          pela área das artes e da criação desde muito nova, o que acabou lhe
+          trazendo ao ramo do artesanato. Trabalhou muito tempo como
+          figurinista, fazendo figurinos que variavam desde espetáculos em
+          teatros, a performances de rua. Se formou em costura e modelagem pelo
+          Senac e ingressou na produção sob medida, fazendo de roupas infantis a
+          vestidos de festa, corset e alfaiataria. <br/><br/>
+          Está se formando em design de
+          moda pelo Instituto Federal de Brasília. <br/><br/>
+          Hoje Larissa é professora de
+          modelagem na Vestida de Sonhos há mais de 3 anos, corte e costura,
+          pois descobriu seu amor pela arte de ensinar. <br/><br/>
+          Se apaixonou
+          perdidamente pela profissão e pela sensação incrível da troca mútua de
+          conhecimento entre professor e aluno.
+        </p>
+      </section>
+
+      <section class="investimento">
+        <h2 class="title">Investimento</h2>
+
+        <p id="motivos">
+          ✅ Aulas presenciais<br />
+          ✅ Atendimento individual e personalizado<br />
+          ✅ Material incluso<br />
+          ✅ Novas experiências<br />
+          ✅ Estímulo à criatividade e atenção<br />
+          ✅ Lindo conjuntinho escolar e peça de roupa só sua<br />
+          ✅ Equipe altamente qualificada<br />
+          ✅ Tardes de diversão e socialização
+        </p>
+
+        <br />
+
+        <p class="invest pink">Matrícula: R$120,00</p>
+        <p class="invest blue3">garanta já a sua vaga por apenas</p>
+        <p class="invest blue3" id="investValor">
+          2x de <span class="green">R$270,00</span>
+        </p>
+        <p class="invest blue2">ou R$490,00 à vista</p>
+
+        <br />
+
+        <button id="buttonInvest" onclick="inscrevase()">
+          Garantir minha vaga
+        </button>
+      </section>
+
+      <section class="faq">
+        <h2 class="title" id="titleFaq">Perguntas Frequentes</h2>
+
+        <div class="perguntas">
+          <details>
+            <summary class="q1">Como funcionam os pagamentos?</summary>
+            <div class="faq__content">
+              <p>A matrícula vai ser paga após a confirmação, no início de Janeiro e poderá ser feito via Transferência Bancária, PIX ou Cobrança PagSeguro.
+                O curso deverá ser pago antes do início da colônia de férias por PIX, débito ou crédito em até 2x com juros.</p>
+            </div>
+          </details>
+          <details>
+            <summary class="q2">Como é feita a matrícula?</summary>
+            <div class="faq__content">
+              <p>Você deve preencher o formulário da página de pré-matrícula e no início de janeiro entraremos em contato para preencher as vagas, lembre-se, a preferência vai ser sempre para quem preencheu primeiro nossa página.</p>
+            </div>
+          </details>
+          <details>
+            <summary class="q3">Crianças fora da idade abrangida, de 7 a 13 anos, podem participar do curso?</summary>
+            <div class="faq__content">
+              <p>Preencha a pré-matrícula e fale com a gente pelo Whatsapp que iremos avaliar cada caso em específico.</p>
+            </div>
+          </details>
+
+          
       </section>
     </main>
+
+    <footer>
+      <div id="vds">
+        <img id="vdsLogo2" src="/imagens/material/vdsLogo2.png"/>
+        <h2 id="h2Vds">Vestida de Sonhos</h2>
+        <p>Vestir um sonho é o que nos inspira</p>
+      </div>
+
+      <br/>
+
+      <div id="contato">
+        <h3>Entre em contato</h3>
+        <p><a href="https://wa.me/5561996249674" target="_blank">(61) 99624.9674</a><br/><a href="https://www.vestidadesonhos.com/" target="_blank">www.vestidadesonhos.com</a></p>
+
+        <div id="redes">
+          <a href="https://www.instagram.com/vestidadesonhos/" target="_blank"><img id="instagram" src="/imagens/imgBody/instagram.svg"></a>
+          <a href="https://www.tiktok.com/@costureiraaventureira/?" target="_blank"><img id="tiktok" src="/imagens/imgBody/tiktok.svg"></a>
+          <a href="https://www.facebook.com/vestidadesonhoss" target="_blank"><img id="facebook" src="/imagens/imgBody/facebook.svg"></a>
+          <a href="https://www.youtube.com/c/VestidadeSonhos" target="_blank"><img id="youtube" src="/imagens/imgBody/youtube.svg"></a>
+          <a href="https://t.me/vestidadesonhos" target="_blank"><img id="telegram" src="/imagens/imgBody/telegram.svg"></a>
+          <a href="https://open.spotify.com/playlist/4UhsFGSaD64hcCVcHQV5Yj" target="_blank"><img id="spotify" src="/imagens/imgBody/spotify.svg"></a>
+        </div>
+      </div>
+
+      <div id="adress">
+        <img id="line" src="/imagens/imgBody/Line.svg" />
+        <br />
+        <br />
+        <p>© Copyright Vestida de Sonhos 2022</p>
+        <p>
+          SCLRN 713 - Bloco D, Apartamento 20, Asa Norte - Brasília/DF CNPJ:
+          21.120.048/0001-03
+        </p>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="script.js"></script>
   </body>

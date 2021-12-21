@@ -1,14 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  -webkit-tap-highlight-color: transparent;
 
   font-family: "Poppins", sans-serif;
 }
+
+/* Cores para span(letras coloridas) */
+
+.pink {
+  color: #f096b1;
+}
+
+.blue {
+  color: #75a8af;
+}
+
+.blue2 {
+  color: #6fbbbd;
+}
+
+.blue3 {
+  color: #2f327d;
+}
+
+.yellow {
+  color: #f6d46f;
+}
+
+.green {
+  color: #979b4b;
+}
+
+/* Header */
 
 header {
   position: relative;
@@ -44,6 +71,8 @@ header {
   transition: 0.5s;
 }
 
+/* Ajustes da foto para diferentes tamanhos de tela */
+
 @media only screen and (min-width: 440px) {
   #backgroundHeader {
     width: 100%;
@@ -70,6 +99,8 @@ header {
     clip-path: circle(150% at 50% -66%);
   }
 }
+
+/* Menu sanduíche > Header */
 
 .navbar {
   display: flex;
@@ -169,6 +200,8 @@ header {
   }
 }
 
+/* Conteúdo Principal > Header */
+
 #content {
   z-index: 1;
 }
@@ -176,10 +209,6 @@ header {
 #colonia {
   margin-top: 8px;
   margin-bottom: 12px;
-}
-
-.pink {
-  color: #f096b1;
 }
 
 #descriptionHeader {
@@ -213,8 +242,9 @@ button {
 
 button:hover {
   transform: scale(1.05);
-  background-color: #f096b1;
 }
+
+/* Imagens Flutuantes > Header */
 
 #agulhaHeader {
   position: absolute;
@@ -255,8 +285,9 @@ button:hover {
   }
 }
 
+/* Main */
+
 main {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,6 +311,8 @@ main {
 
   color: #696984;
 }
+
+/* Section Público */
 
 .cardSectionPub {
   display: flex;
@@ -337,12 +370,10 @@ main {
   margin: 4px 18px;
 }
 
+/* Section Conteúdo */
+
 #titleCont {
   margin-top: 48px;
-}
-
-.blue {
-  color: #75a8af;
 }
 
 #principalImgCont {
@@ -351,6 +382,8 @@ main {
 
   margin-top: 48px;
 }
+
+/* Section CTA */
 
 .cta {
   background-color: #fdf6e2;
@@ -385,17 +418,7 @@ main {
   margin-bottom: 38px;
 }
 
-.blue2 {
-  color: #6fbbbd;
-}
-
-.yellow {
-  color: #f6d46f;
-}
-
-.green {
-  color: #979b4b;
-}
+/* Section Benefícios */
 
 .imgCardsBeneficios {
   width: 80%;
@@ -421,6 +444,8 @@ main {
   color: #696984;
 }
 
+/* Section Frase sobre Benefícios */
+
 .frase {
   background-color: #c3f0f1;
   margin-top: 48px;
@@ -437,6 +462,8 @@ main {
   margin: 26px;
   padding: 12px 0;
 }
+
+/* Section Depoimentos */
 
 #depoimentoHelena {
   margin-top: 34px;
@@ -461,34 +488,23 @@ main {
   color: #ffffff;
 }
 
+/* Section Fotos */
+
 .fotos {
   background-color: #ffe2ea;
   padding: 26px 0;
 }
 
 #titleFotos {
-  margin-bottom: 26px;
+  margin-bottom: 8px;
 }
 
-.footer {
-  width: 100vw;
-  background-color: #f8f8f8;
-}
-
-#line {
-  width: 80%;
-}
-
-#adress {
-  font-size: 14px;
-
-  margin: 24px 8px;
-}
+/* Carrossel > Fotos */
 
 .slides {
   padding: 0;
   width: 100vw;
-  height: 50vh;
+  /* height: 50vh; */
   display: block;
   margin: 26px 0;
   position: relative;
@@ -515,10 +531,9 @@ main {
   top: 0;
   opacity: 0;
   width: 100vw;
-  height: 50vh;
+  /* height: 50vh; */
   display: block;
   position: absolute;
-
   transform: scale(0);
 
   transition: all 0.7s ease;
@@ -532,8 +547,9 @@ main {
 }
 
 .nav label {
-  width: 200px;
-  height: 100%;
+  top: 20%;
+  width: 50%;
+  height: 60%;
   display: none;
   position: absolute;
 
@@ -543,10 +559,10 @@ main {
 
   transition: opacity 0.2s;
 
-  color: #fff;
-  font-size: 156pt;
+  color: rgba(255, 255, 255, 0);
+  font-size: 16px;
   text-align: center;
-  line-height: 380px;
+  line-height: 16px;
   font-family: "Varela Round", sans-serif;
   background-color: rgba(255, 255, 255, 0.3);
   text-shadow: 0px 0px 15px rgb(119, 119, 119);
@@ -580,9 +596,10 @@ input:checked + .slide-container .nav label {
   width: 100%;
   bottom: -324px;
   height: 11px;
-  display: flex;
+  padding-top: 324px;
+  /* display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: center; */
   text-align: center;
 }
 
@@ -609,4 +626,227 @@ input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
   background: #b03658;
+}
+
+/* Section Professoras */
+
+#titleProfs {
+  margin-top: 26px;
+}
+
+#marcalImg {
+  width: 80%;
+
+  margin-top: 14px;
+}
+
+#freitasImg {
+  width: 80%;
+
+  margin-top: 24px;
+}
+
+.descProfs {
+  padding-top: 0;
+  margin-bottom: 26px;
+}
+
+/* Section Investimento */
+
+.investimento {
+  width: 100vw;
+  padding: 26px 36px;
+  background-color: #fdf6e2;
+}
+
+#motivos {
+  padding: 20px 22px;
+  margin-top: 8px;
+  background-color: #ffffff;
+  border-radius: 20px;
+
+  text-align: left;
+}
+
+.invest {
+  font-weight: bold;
+}
+
+#investValor {
+  font-size: 36px;
+  line-height: 105%;
+  letter-spacing: 0.02em;
+}
+
+#buttonInvest {
+  width: 236px;
+  height: 46px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  background: #f096b1;
+  border-radius: 80px;
+
+  color: #fff;
+}
+
+/* Section FAQ */
+
+#titleFaq {
+  margin-top: 26px;
+}
+
+.perguntas {
+  background-color: #ffe2ea;
+  margin: 26px;
+  padding: 30px;
+
+  border-radius: 30px;
+}
+
+/* Summary (botão sobe e desce) > FAQ */
+
+summary {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 105%;
+  background-color: #ffe2ea;
+  color: #2f327d;
+  padding: 16px 0;
+  padding-right: 60px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq__content {
+  font-size: 14px;
+  line-height: 150%;
+  text-align: justify;
+  letter-spacing: 0.02em;
+
+  padding-top: 6px;
+
+  color: #8989a7;
+}
+
+details > summary.q1::after {
+  position: absolute;
+  content: url("/imagens/imgBody/setaFaq.svg");
+  right: -2px;
+  top: 12px;
+}
+
+details > summary.q2::after {
+  position: absolute;
+  content: url("/imagens/imgBody/setaFaq.svg");
+  right: -2px;
+  top: 12px;
+}
+
+details > summary.q3::after {
+  position: absolute;
+  content: url("/imagens/imgBody/setaFaq.svg");
+  right: -2px;
+  top: 8px;
+}
+
+details[open] > summary.q1::after {
+  position: absolute;
+  content: url("/imagens/imgBody/menosFaq.svg");
+  right: -2px;
+  top: 12px;
+}
+
+details[open] > summary.q2::after {
+  position: absolute;
+  content: url("/imagens/imgBody/menosFaq.svg");
+  right: -2px;
+  top: 12px;
+}
+
+details[open] > summary.q3::after {
+  position: absolute;
+  content: url("/imagens/imgBody/menosFaq.svg");
+  right: -2px;
+  top: 8px;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Animação do summary */
+
+/* details[open] summary ~ * {
+  animation: sweep 0.2s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+} */
+
+/* Footer */
+
+footer {
+  width: 100vw;
+  background-color: #f8f8f8;
+
+  padding-top: 8px;
+  padding-bottom: 26px;
+
+  text-align: center;
+}
+
+#vdsLogo2 {
+  width: 113px;
+  height: 142px;
+
+  font-weight: 300;
+}
+
+#h2Vds {
+  margin-top: -16px;
+}
+
+a {
+  color: inherit;
+}
+
+#redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+#instagram,
+#tiktok,
+#facebook,
+#youtube,
+#telegram,
+#spotify {
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+}
+
+#line {
+  width: 80%;
+  height: 5px;
+}
+
+#adress {
+  font-size: 14px;
+
+  margin: 12px 18px 0 18px;
 }
