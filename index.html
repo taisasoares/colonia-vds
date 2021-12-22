@@ -25,7 +25,7 @@
   <body>
     <header role="banner">
       <nav class="navbar">
-        <a href="#" class="nav-logo">logo</a>
+        <a href="#" class="nav-logo"><img id="logoRed" src="/imagens/imgBody/vdsLogo.png" alt="logotipo reduzido Vestida de Sonhos"></a>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="#publico" class="nav-link">Público</a>
@@ -79,7 +79,7 @@
 
     <main role="main">
       <section id="publico">
-        <h2 class="title">
+        <h2 class="title" id="titlePub">
           Para quem é a <span class="pink">Colônia de Férias</span>?
         </h2>
         <p class="desc">
@@ -94,7 +94,7 @@
             <img class="iconCardPub" src="/imagens/imgBody/iconCard1Pub.svg" alt="icon pessoas"/>
 
             <h3 class="h3Pub">Aulas presenciais</h3>
-            <p class="pPub">
+            <p class="pPub" id="pPub1">
               As aulas serão feitas na sede da escola Vestida de Sonhos para que
               você não se preocupe com os materiais e ferramentas necessárias
             </p>
@@ -104,7 +104,7 @@
             <img class="iconCardPub" src="/imagens/imgBody/iconCard2Pub.svg" alt="icon alvo"/>
 
             <h3 class="h3Pub">Turmas de até 7 alunos</h3>
-            <p class="pPub">
+            <p class="pPub" id="pPub2">
               As turmas serão reduzidas para que todos possam ser atendidos da
               melhor forma e também como cuidado adicional contra o COVID-19
             </p>
@@ -124,28 +124,31 @@
       </section>
 
       <section id="conteudos">
-        <h2 class="title" id="titleCont">
-          O que vou <span class="blue">aprender</span>?
-        </h2>
-        <p class="desc">
-          Nesse curso de <i>17 horas e meia</i>, você vai aprender a fazer
-          <b>o kit escolar aventureiro ou o kit escolar fofurices</b>. Ambos os
-          kits são formados por uma mochila sack e um estojo de lápis, para
-          customizar os seus momentos de estudo.
-          <br />
-          <br />
-          Além dos kits, você vai aprender a <b>estampar tecidos</b> e com essa
-          linda estampa que você mesmo criou, vamos
-          <b>costurar um Vestido ou um Short</b>
-          para você sair falando para todo mundo que você mesmo costurou a SUA
-          ROUPA!
-        </p>
+        <div id="textCont">
+          <h2 class="title" id="titleCont">
+            O que vou <span class="blue">aprender</span>?
+          </h2>
 
-        <img
-          id="principalImgCont"
-          src="/imagens/imgBody/principalImgCont.svg"
-          alt="imagem kits escolares aventureiro e fofurices"
-        />
+          <p class="desc" id="descCont">
+            Nesse curso de <i>17 horas e meia</i>, você vai aprender a fazer
+            <b>o kit escolar aventureiro ou o kit escolar fofurices</b>. Ambos os
+            kits são formados por uma mochila sack e um estojo de lápis, para
+            customizar os seus momentos de estudo.
+            <br />
+            <br />
+            Além dos kits, você vai aprender a <b>estampar tecidos</b> e com essa
+            linda estampa que você mesmo criou, vamos
+            <b>costurar um Vestido ou um Short</b>
+            para você sair falando para todo mundo que você mesmo costurou a SUA
+            ROUPA!
+          </p>
+        </div>
+
+          <img
+            id="principalImgCont"
+            src="/imagens/imgBody/principalImgCont.svg"
+            alt="imagem kits escolares aventureiro e fofurices"
+          />
 
         <!-- Imagens Flutuantes > Conteúdos -->
         <img id="botao1Cont" src="/imagens/ilustracoes/botao3.svg" alt="botão laranja"/>
@@ -167,19 +170,22 @@
 
       <section id="beneficios">
         <h2 class="title" id="titleBeneficios">
-          Os <span class="yellow">benefícios</span> da costura vão muito além do
+          Os <span class="yellow">benefícios</span> da costura <br/> vão muito além do
           produto final!
         </h2>
 
         <div id="cardsBeneficios">
           <div id="card1">
-            <h3 class="subtitleBeneficios">
+            <div id="textCard">
+              <h3 class="subtitleBeneficios">
               <span class="pink">Estimula</span> o cérebro
-            </h3>
-            <p class="descBeneficios">
+              </h3>
+              <p class="descBeneficios">
               A costura é uma atividade multidisciplinar que vai estimular o
               cérebro a ter mais atenção, curiosidade e satisfação
-            </p>
+              </p>
+            </div>
+            
             <img
               class="imgCardsBeneficios"
               src="/imagens/imgBody/imgCard1Benef.svg"
@@ -188,13 +194,16 @@
           </div>
 
           <div id="card2">
-            <h3 class="subtitleBeneficios">
-              Aprimora a <span class="blue2">coordenação motora</span>
-            </h3>
-            <p class="descBeneficios">
-              Trabalha com a coordenação motora da criança, dando mais controle
-              e habilidade nos movimentos
-            </p>
+            <div id="textCard2">
+              <h3 class="subtitleBeneficios">
+                Aprimora a <span class="blue2">coordenação motora</span>
+              </h3>
+              <p class="descBeneficios">
+                Trabalha com a coordenação motora da criança, dando mais controle
+                e habilidade nos movimentos
+              </p>
+            </div>
+            
             <img
               class="imgCardsBeneficios"
               src="/imagens/imgBody/imgCard2Benef.svg"
@@ -203,12 +212,15 @@
           </div>
 
           <div id="card3">
-            <h3 class="subtitleBeneficios">
-              Promove a <span class="green">criatividade</span>
-            </h3>
-            <p class="descBeneficios">
-              Aumenta a capacidade de concentração e estimula a criatividade
-            </p>
+            <div id="textCard">
+              <h3 class="subtitleBeneficios">
+                Promove a <span class="green">criatividade</span>
+              </h3>
+              <p class="descBeneficios">
+                Aumenta a capacidade de concentração e estimula a criatividade
+              </p>
+            </div>
+            
             <img
               class="imgCardsBeneficios"
               src="/imagens/imgBody/imgCard3Benef.svg"
@@ -226,7 +238,7 @@
 
       <section id="frase">
         <h2 id="titleFrase">
-          É praticamente o multiverso das
+          É praticamente o multiverso das <br/>
           <span class="pink">atividades complementares educacionais</span>
         </h2>
       </section>
@@ -439,7 +451,7 @@
         </h2>
 
         <img id="marcalImg" src="/imagens/imgBody/marcalImg.svg" alt="Foto professora Larissa Marçal"/>
-        <h3 class="title green">Larissa Marçal</h3>
+        <h3 class="green" id="nomeProf">Larissa Marçal</h3>
         <p class="desc descProfs">
           Larissa Marçal é costureira há 8 anos. <br/><br/>
           Técnica em vestuário, e graduada em Design de Moda pelo Instituto Federal de Brasília. Também
@@ -452,7 +464,7 @@
         </p>
 
         <img id="freitasImg" src="/imagens/imgBody/freitasImg.svg" alt="Foto professora Larissa Freitas"/>
-        <h3 class="title green">Larissa Freitas</h3>
+        <h3 class="green" id="nomeProf">Larissa Freitas</h3>
         <p class="desc descProfs">
           Larissa Freitas é costureira, modelista e figurinista. <br/><br/>
           Se interessou

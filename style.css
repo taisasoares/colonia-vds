@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  user-select: none;
+}
+
 /* Cores para span(letras coloridas) */
 
 .pink {
@@ -101,6 +105,13 @@ header {
 
   header {
     clip-path: circle(150% at 50% -66%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #logoRed {
+    width: 62px;
+    height: 62px;
   }
 }
 
@@ -386,6 +397,58 @@ main {
   margin: 4px 18px;
 }
 
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 38px;
+  }
+
+  .desc {
+    margin: 36px 146px;
+    font-size: 21px;
+    padding: 0;
+  }
+
+  #titlePub {
+    margin-top: 62px;
+  }
+
+  .h3Pub {
+    padding: 22px 76px;
+    font-size: 24px;
+  }
+
+  .pPub {
+    font-size: 18px;
+    margin: 0px 38px;
+  }
+
+  #pPub1 {
+    margin-top: 32px;
+  }
+
+  #pPub2 {
+    margin-top: 14px;
+  }
+
+  .cardSectionPub {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 64px;
+  }
+
+  .cardPub {
+    width: 366px;
+    height: 336px;
+
+    margin: 58px 30px;
+    padding-bottom: 34px;
+  }
+}
+
 /* Section Conteúdo */
 
 #titleCont {
@@ -434,6 +497,101 @@ main {
   transform: rotate(-44deg);
 }
 
+@media only screen and (min-width: 768px) {
+  #conteudos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 98px 0;
+  }
+
+  #titleCont,
+  #descCont {
+    margin: 0;
+    margin-bottom: 26px;
+    padding: 0;
+  }
+
+  #textCont {
+    text-align: left;
+    margin-left: 210px;
+    margin-right: 63px;
+  }
+
+  #principalImgCont {
+    width: 105%;
+    margin: 0;
+    margin-right: 190px;
+  }
+
+  #botao1Cont {
+    left: 96px;
+  }
+
+  #botao2Cont {
+    width: 46px;
+    height: 46px;
+    right: 42%;
+    top: 224px;
+  }
+
+  #botao3Cont {
+    width: 82px;
+    height: 82px;
+    left: 608px;
+    top: 436px;
+  }
+}
+
+@media only screen and (min-width: 1345px) and (max-width: 1554px) {
+  #botao2Cont {
+    right: 40%;
+    top: 156px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
+  #botao1Cont {
+    width: 67px;
+    height: 66px;
+    left: 46px;
+    top: -72px;
+  }
+
+  #botao2Cont {
+    width: 46px;
+    height: 46px;
+    right: 60px;
+    top: 418px;
+  }
+
+  #botao3Cont {
+    width: 84px;
+    height: 74px;
+    top: 548px;
+    left: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+  #conteudos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #textCont {
+    text-align: center;
+    margin: 0 84px;
+  }
+
+  #principalImgCont {
+    width: 50%;
+    margin: 0;
+  }
+}
+
 /* Section CTA */
 
 #cta {
@@ -469,12 +627,24 @@ main {
   margin-bottom: 38px;
 }
 
-/* Section Benefícios */
+@media only screen and (min-width: 768px) {
+  #cta {
+    width: 100vw;
+    padding: 36px 0;
+  }
 
-.imgCardsBeneficios {
-  width: 80%;
-  height: auto;
+  #titleCta {
+    font-size: 36px;
+
+    margin: 26px 64px;
+  }
+
+  #buttonCta {
+    margin-top: 8px;
+  }
 }
+
+/* Section Benefícios */
 
 #titleBeneficios {
   padding-top: 0;
@@ -493,6 +663,11 @@ main {
   padding-bottom: 12px;
 
   color: #696984;
+}
+
+.imgCardsBeneficios {
+  width: 80%;
+  height: auto;
 }
 
 /* Imagens Flutuantes > Beneficios */
@@ -543,6 +718,77 @@ main {
   z-index: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  #titleBeneficios {
+    margin: 46px 0;
+  }
+
+  .subtitleBeneficios {
+    font-size: 26px;
+  }
+
+  .descBeneficios {
+    font-size: 21px;
+  }
+
+  #textCard {
+    text-align: left;
+  }
+
+  #textCard2 {
+    text-align: right;
+  }
+
+  #card1,
+  #card3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 46px 14%;
+  }
+
+  #card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    margin: 46px 14%;
+  }
+
+  #alfinetesBenef {
+    width: 180px;
+    height: 126px;
+    left: -1%;
+    top: 120px;
+    transform: rotate(76deg) scalex(-1);
+  }
+
+  #alfinete1Benef {
+    width: 84px;
+    height: 231px;
+    right: -80px;
+    top: 464px;
+    transform: rotate(236deg);
+  }
+
+  #alfinete9Benef {
+    width: 75px;
+    height: 180px;
+    bottom: 302px;
+    left: -89px;
+    transform: rotate(31deg);
+  }
+
+  #portaAlfinete2Benef {
+    width: 258px;
+    height: 206px;
+    left: -116px;
+    bottom: -96px;
+    transform: rotate(14deg);
+  }
+}
+
 /* Section Frase sobre Benefícios */
 
 #frase {
@@ -562,6 +808,19 @@ main {
 
   margin: 26px;
   padding: 12px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #frase {
+    width: 100vw;
+    padding: 62px 0;
+  }
+
+  #titleFrase {
+    font-size: 36px;
+
+    margin: 26px 64px;
+  }
 }
 
 /* Section Depoimentos */
@@ -890,6 +1149,11 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   margin-left: 18px;
 }
 
+#nomeProf {
+  margin-bottom: 8px;
+  font-size: 21px;
+}
+
 #marcalImg {
   width: 80%;
 
@@ -1100,7 +1364,7 @@ details > summary::-webkit-details-marker {
 /* Footer */
 
 footer {
-  width: 100vw;
+  width: 100%;
   background-color: #f8f8f8;
 
   padding-top: 8px;
