@@ -9,6 +9,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Cores para span(letras coloridas) */
 
 .pink {
