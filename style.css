@@ -248,6 +248,7 @@ button:hover {
 
 #agulhaHeader {
   position: absolute;
+
   width: 48px;
   height: 124px;
   right: -8px;
@@ -259,10 +260,12 @@ button:hover {
 
 #carretelHeader {
   position: absolute;
+
   width: 48px;
   height: 76px;
   left: -6px;
   top: 322px;
+
   background: url(carretelM.png);
   transform: rotate(12deg);
 
@@ -295,6 +298,15 @@ main {
   text-align: center;
 
   overflow: hidden;
+}
+
+#conteudos,
+#beneficios,
+#depoimentos,
+#professoras,
+#investimento,
+#faq {
+  position: relative;
 }
 
 .title {
@@ -383,9 +395,44 @@ main {
   margin-top: 48px;
 }
 
+/* Imagens Flutuantes > Conteúdo */
+
+#botao1Cont {
+  position: absolute;
+
+  width: 54px;
+  height: 54px;
+  left: -26px;
+  top: -8px;
+
+  transform: rotate(24deg);
+}
+
+#botao2Cont {
+  position: absolute;
+
+  width: 38px;
+  height: 38px;
+  right: -16px;
+  top: 316px;
+
+  transform: rotate(24deg);
+}
+
+#botao3Cont {
+  position: absolute;
+
+  width: 48px;
+  height: 48px;
+  left: -18px;
+  top: 538px;
+
+  transform: rotate(-44deg);
+}
+
 /* Section CTA */
 
-.cta {
+#cta {
   background-color: #fdf6e2;
   margin: 34px 0;
 }
@@ -444,12 +491,62 @@ main {
   color: #696984;
 }
 
+/* Imagens Flutuantes > Beneficios */
+
+#alfinetesBenef {
+  position: absolute;
+
+  width: 96px;
+  height: 96px;
+  left: -33px;
+  top: 66px;
+
+  transform: rotate(6deg);
+}
+
+#alfinete1Benef {
+  position: absolute;
+
+  width: 35px;
+  height: 126px;
+  right: -18px;
+  top: 396px;
+
+  transform: rotate(236deg);
+}
+
+#alfinete9Benef {
+  position: absolute;
+
+  width: 35px;
+  height: 126px;
+  bottom: 98px;
+  left: -14px;
+
+  transform: rotate(24deg);
+}
+
+#portaAlfinete2Benef {
+  position: absolute;
+
+  width: 92px;
+  height: 76px;
+  bottom: -64px;
+  left: -14px;
+
+  transform: rotate(14deg);
+
+  z-index: 0;
+}
+
 /* Section Frase sobre Benefícios */
 
-.frase {
+#frase {
   background-color: #c3f0f1;
   margin-top: 48px;
   margin-bottom: 26px;
+
+  z-index: 5;
 }
 
 #titleFrase {
@@ -615,9 +712,33 @@ input#dep-4:checked ~ .navDep-dots label#dep-dot-4 {
   color: #ffffff;
 }
 
+/* Imagens Flutuantes > Depoimentos */
+
+#meada2 {
+  position: absolute;
+
+  width: 72px;
+  height: 56px;
+  top: 76px;
+  left: -36px;
+
+  transform: rotate(118deg);
+}
+
+#botoesDep {
+  position: absolute;
+
+  width: 92px;
+  height: 76px;
+  top: 282px;
+  right: -34px;
+
+  transform: rotate(176deg);
+}
+
 /* Section Fotos */
 
-.fotos {
+#fotos {
   background-color: #ffe2ea;
   padding: 26px 0;
 }
@@ -761,6 +882,8 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
 
 #titleProfs {
   margin-top: 26px;
+  margin-right: 18px;
+  margin-left: 18px;
 }
 
 #marcalImg {
@@ -780,9 +903,20 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   margin-bottom: 26px;
 }
 
+/* Imagens Flutuantes > Professoras */
+
+#carretelP {
+  position: absolute;
+
+  width: 58px;
+  height: 58px;
+  top: -12px;
+  left: -14px;
+}
+
 /* Section Investimento */
 
-.investimento {
+#investimento {
   width: 100vw;
   padding: 26px 36px;
   background-color: #fdf6e2;
@@ -818,6 +952,19 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   border-radius: 80px;
 
   color: #fff;
+}
+
+/* Imagens Flutuantes > Professoras */
+
+#botoesInvest {
+  position: absolute;
+
+  width: 92px;
+  height: 112px;
+  top: -38px;
+  right: -38px;
+
+  transform: rotate(36deg);
 }
 
 /* Section FAQ */
@@ -923,6 +1070,28 @@ details > summary::-webkit-details-marker {
     margin-top: 0px;
   }
 } */
+
+/* Imagens Flutuantes > FAQ */
+
+#alfinetesSeg {
+  position: absolute;
+
+  width: 92px;
+  height: 112px;
+  top: -46px;
+  left: -18px;
+
+  transform: rotate(356deg);
+}
+
+#tesouraPrecisao {
+  position: absolute;
+  width: 84px;
+  height: 119px;
+  bottom: -26px;
+  right: -43px;
+  transform: rotate(62deg);
+}
 
 /* Footer */
 
