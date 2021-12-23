@@ -244,31 +244,27 @@
       </section>
 
       <section id="depoimentos">
-        <h2 class="title">
-          O que nossos <span class="pink">ex-alunos</span> tem
-          <span class="blue2">a dizer</span>?
-        </h2>
-        <p class="desc">
-          Essa é a segunda edição da Colônia de Férias! Veja o que nossos
-          aluninhos tiveram a dizer da primeira:
-        </p>
+        <div id="depoimentosContainer">
+          <div id="textDep">
+            <h2 class="title" id="titleDep">
+              O que nossos <span class="pink">ex-alunos</span> tem
+              <span class="blue2">a dizer</span>?
+            </h2>
+            <p class="desc" id="descDep">
+              Essa é a segunda edição da Colônia de Férias! Veja o que nossos
+              aluninhos tiveram a dizer da primeira:
+            </p>
 
-        <img id="depoimento" src="/imagens/imgBody/depoimentoHelenaS.svg" alt="Depoimento Helena"/>
+            <img id="maquinaDep" src="/imagens/imgBody/maquinaDep.svg" alt="máquina de costura"/>
+          </div>
 
-        <img id="depoimento" src="/imagens/imgBody/depoimentoMiguel.svg" alt="Depoimento Miguel"/>
-
-        <img id="depoimento" src="/imagens/imgBody/depoimentoEnzo.svg" alt="Depoimento Enzo"/>
-
-        <img id="depoimento" src="/imagens/imgBody/depoimentoIuri.svg" alt="Depoimento Iuri"/>
-
-
-        <!-- <ul class="slidesDeps">
-          <input type="radio" name="radio-btn" id="dep-1" checked />
+          <ul class="slidesDeps">
+          <input type="radio" name="radio-btn-dep" id="dep-1" checked />
           <li class="slideDep-container">
             <div class="slideDep">
               <img
                 id="depoimento"
-                src="/imagens/imgBody/depoimentoHelenaS.svg"
+                src="/imagens/imgBody/depHelena.svg"
               />
             </div>
             <div class="navDep">
@@ -277,12 +273,12 @@
             </div>
           </li>
 
-          <input type="radio" name="radio-btn" id="dep-2" />
+          <input type="radio" name="radio-btn-dep" id="dep-2" />
           <li class="slideDep-container">
             <div class="slideDep">
               <img
                 id="depoimento"
-                src="/imagens/imgBody/depoimentoMiguel.svg"
+                src="/imagens/imgBody/depMiguel.svg"
               />
             </div>
             <div class="navDep">
@@ -291,12 +287,12 @@
             </div>
           </li>
 
-          <input type="radio" name="radio-btn" id="dep-3" />
+          <input type="radio" name="radio-btn-dep" id="dep-3" />
           <li class="slideDep-container">
             <div class="slideDep">
               <img
                 id="depoimento"
-                src="/imagens/imgBody/depoimentoEnzo.svg"
+                src="/imagens/imgBody/depEnzo.svg"
               />
             </div>
             <div class="navDep">
@@ -305,12 +301,12 @@
             </div>
           </li>
 
-          <input type="radio" name="radio-btn" id="dep-4" />
+          <input type="radio" name="radio-btn-dep" id="dep-4" />
           <li class="slideDep-container">
             <div class="slideDep">
               <img
                 id="depoimento"
-                src="/imagens/imgBody/depoimentoIuri.svg"
+                src="/imagens/imgBody/depIuri.svg"
               />
             </div>
             <div class="navDep">
@@ -318,15 +314,8 @@
               <label for="dep-1" class="nextD">&#x203a;</label>
             </div>
           </li>
-
-          <li class="navDep-dots">
-            <label for="dep-1" class="navD-dot" id="dep-dot-1"></label>
-            <label for="dep-2" class="navD-dot" id="dep-dot-2"></label>
-            <label for="dep-3" class="navD-dot" id="dep-dot-3"></label>
-            <label for="dep-4" class="navD-dot" id="dep-dot-4"></label>
-          </li> -->
-
-        <!--<img id="seta"/>-->
+          </ul>
+      </div>
 
         <button id="buttonDepoimentos" onclick="inscrevase()">
           Faça já sua pré-matricula

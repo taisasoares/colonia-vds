@@ -792,6 +792,7 @@ main {
 /* Section Frase sobre Benefícios */
 
 #frase {
+  width: 100%;
   background-color: #c3f0f1;
   margin-top: 48px;
   margin-bottom: 26px;
@@ -826,19 +827,24 @@ main {
 /* Section Depoimentos */
 
 #depoimento {
-  margin-top: 34px;
-
+  position: absolute;
   width: 80%;
+  object-fit: contain;
+  transform: translate(-50%, 10px);
+}
+
+#maquinaDep {
+  display: none;
 }
 
 /* Slides depoimentos */
 
-/* .slidesDeps {
+.slidesDeps {
   padding: 0;
   width: 100vw;
   height: 50vh;
   display: block;
-  margin: 26px 0;
+  margin: 32px 0;
   position: relative;
 }
 
@@ -864,40 +870,32 @@ main {
   opacity: 0;
   width: 100vw;
   /* height: 50vh; */
-/* display: block;
+  display: block;
   position: absolute;
   transform: scale(0);
 
-  transition: all 0.7s ease;
+  transition: all 1.5s ease;
 }
 
 .slideDep img {
-  object-fit: cover;
-  width: 80%;
-  height: 300px;
+  height: 60vh;
   border-radius: 20px;
 }
 
 .navDep label {
-  top: 20%;
-  width: 50%;
-  height: 60%;
+  top: 22%;
+  width: 32%;
+  height: 46%;
   display: none;
   position: absolute;
-
-  opacity: 0;
+  opacity: 50%;
   z-index: 9;
   cursor: pointer;
+  content: url("/imagens/imgBody/setaDep.svg");
+}
 
-  transition: opacity 0.2s;
-
-  color: rgba(255, 255, 255, 0);
-  font-size: 16px;
-  text-align: center;
-  line-height: 16px;
-  font-family: "Varela Round", sans-serif;
-  background-color: rgba(255, 255, 255, 0.3);
-  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+.navDep label.prevD {
+  transform: rotate(180deg);
 }
 
 .slideDep:hover + .navDep label {
@@ -924,43 +922,7 @@ input:checked + .slideDep-container .navDep label {
   display: block;
 }
 
-.navDep-dots {
-  width: 100%;
-  bottom: -324px;
-  height: 11px;
-  padding-top: 324px;
-  /* display: flex;
-  position: relative;
-  justify-content: center; */
-/* text-align: center;
-}
-
-.navDep-dots .navD-dot {
-  top: -5px;
-  width: 11px;
-  height: 11px;
-  margin: 0 4px;
-  position: relative;
-  border-radius: 100%;
-  display: inline-block;
-  background-color: #bdbdbd;
-}
-
-.navDep-dots .navD-dot:hover {
-  cursor: pointer;
-  background-color: #b03658;
-}
-
-input#dep-1:checked ~ .navDep-dots label#dep-dot-1,
-input#dep-2:checked ~ .navDep-dots label#dep-dot-2,
-input#dep-3:checked ~ .navDep-dots label#dep-dot-3,
-input#dep-4:checked ~ .navDep-dots label#dep-dot-4 {
-  background: #b03658;
-} */
-
 #buttonDepoimentos {
-  position: relative;
-  top: -36px;
   width: 290px;
   height: 56px;
 
@@ -973,6 +935,7 @@ input#dep-4:checked ~ .navDep-dots label#dep-dot-4 {
   letter-spacing: 0.02em;
 
   color: #ffffff;
+  margin-bottom: 32px;
 }
 
 /* Imagens Flutuantes > Depoimentos */
@@ -999,15 +962,137 @@ input#dep-4:checked ~ .navDep-dots label#dep-dot-4 {
   transform: rotate(176deg);
 }
 
+@media only screen and (min-width: 1270px) {
+  #depoimentosContainer {
+    width: 100%;
+    margin: 42px 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #titleDep,
+  #descDep {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  #depoimento {
+    width: 28%;
+    height: 562px;
+
+    transform: translate(-182%, 0px);
+  }
+
+  .navDep label {
+    top: 26%;
+    width: 30%;
+    height: 48%;
+
+    opacity: 0;
+  }
+
+  .slidesDeps {
+    width: 50%;
+  }
+
+  #textDep {
+    width: 75%;
+  }
+
+  #descDep {
+    margin-top: 18px;
+  }
+
+  #maquinaDep {
+    width: 50%;
+    display: block;
+
+    margin-top: 48px;
+    margin-left: 282px;
+  }
+
+  #buttonDepoimentos {
+    width: 566px;
+    height: 76px;
+    font-size: 26px;
+    margin: 32px 0;
+  }
+
+  #meada2 {
+    width: 202px;
+    height: 123px;
+    top: 646px;
+    left: -352px;
+    transform: rotate(158deg);
+
+    z-index: 0;
+  }
+
+  #botoesDep {
+    width: 179px;
+    height: 172px;
+    top: 31px;
+    right: -251px;
+    transform: rotate(348deg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1269px) {
+  #titleDep {
+    margin-top: 48px;
+  }
+
+  .slideDep img {
+    height: 68vh;
+  }
+
+  #depoimento {
+    transform: translate(-50%, -5px);
+  }
+
+  #meada2 {
+    width: 124px;
+    height: 106px;
+    top: 194px;
+    left: -46px;
+  }
+
+  #botoesDep {
+    width: 139px;
+    height: 139px;
+    top: 586px;
+    right: -20px;
+    transform: rotate(300deg);
+  }
+
+  #buttonDepoimentos {
+    width: 566px;
+    height: 76px;
+    font-size: 26px;
+    margin: 32px 0;
+  }
+}
+
 /* Section Fotos */
 
 #fotos {
   background-color: #ffe2ea;
   padding: 26px 0;
+
+  z-index: 5;
 }
 
 #titleFotos {
   margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  #fotos {
+    margin-top: 42px;
+  }
 }
 
 /* Carrossel > Fotos */
@@ -1180,6 +1265,8 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   height: 58px;
   top: -12px;
   left: -14px;
+
+  z-index: 10;
 }
 
 /* Section Investimento */
