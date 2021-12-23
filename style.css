@@ -70,7 +70,7 @@ header {
 
 @media only screen and (min-width: 360px) {
   header {
-    clip-path: circle(150% at 50% -28%);
+    clip-path: circle(1500px at 50% -140%);
   }
 }
 
@@ -85,37 +85,20 @@ header {
 
 /* Ajustes da foto para diferentes tamanhos de tela */
 
-@media only screen and (min-width: 440px) {
+@media only screen and (min-width: 440px) and (max-width: 639px) {
   #backgroundHeader {
     width: 100%;
     top: 290px;
   }
-
-  header {
-    clip-path: circle(150% at 50% -48%);
-  }
 }
 
-@media only screen and (min-width: 440px) and (max-width: 550px) {
-  header {
-    clip-path: circle(150% at 50% -40%);
-  }
-}
-
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   #backgroundHeader {
     width: 80%;
   }
 
   header {
-    clip-path: circle(150% at 50% -66%);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #logoRed {
-    width: 62px;
-    height: 62px;
+    clip-path: circle(1500px at 50% -132%);
   }
 }
 
@@ -125,9 +108,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: flex-start;
-
-  padding: 12px 6px;
+  padding: 14px;
+  width: 100%;
 }
 
 .hamburger {
@@ -152,7 +134,7 @@ header {
 }
 
 .nav-item {
-  margin-left: 5rem;
+  margin-left: 28px;
 }
 
 .nav-link {
@@ -162,13 +144,7 @@ header {
 }
 
 .nav-link:hover {
-  color: #482ff7;
-}
-
-.nav-logo {
-  font-size: 2.1rem;
-  font-weight: 500;
-  color: #482ff7;
+  color: #75a8af;
 }
 
 @media only screen and (max-width: 768px) {
@@ -291,6 +267,14 @@ button:hover {
   z-index: 1;
 }
 
+#carretelPHeader {
+  display: none;
+}
+
+#fitaHeader {
+  display: none;
+}
+
 @media only screen and (min-width: 545px) {
   #agulhaHeader {
     width: 86px;
@@ -304,6 +288,190 @@ button:hover {
     height: 124px;
 
     transition: 0.5s;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  header {
+    height: 626px;
+    clip-path: circle(2500px at 50% -300%);
+  }
+
+  #logoRed {
+    width: 62px;
+    height: 62px;
+  }
+
+  #content {
+    width: 30%;
+    text-align: left;
+    align-self: flex-start;
+    margin-top: 46px;
+    margin-left: 12%;
+  }
+
+  #descriptionHeader {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  #colonia {
+    margin-top: 26px;
+    margin-bottom: 8px;
+    font-size: 56px;
+  }
+
+  #buttonHeader {
+    width: 314px;
+    height: 64px;
+    font-size: 24px;
+  }
+
+  #backgroundHeader {
+    margin-left: 616px;
+    width: 62%;
+    top: 146px;
+  }
+
+  #carretelHeader {
+    width: 168px;
+    height: 222px;
+    transition: 0.5s;
+    top: 448px;
+    left: -30px;
+    transform: rotate(342deg);
+  }
+
+  #agulhaHeader {
+    right: 906px;
+    top: 68px;
+    transform: rotate(298deg);
+  }
+
+  #fitaHeader {
+    display: block;
+    position: absolute;
+    width: 298px;
+    height: 145px;
+
+    right: -29px;
+    bottom: 86px;
+    transform: rotate(12deg);
+
+    z-index: 1;
+  }
+
+  #carretelPHeader {
+    display: block;
+    position: absolute;
+    width: 79px;
+    height: 86px;
+
+    right: -23px;
+    top: 124px;
+    transform: rotate(164deg);
+
+    z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
+  #content {
+    width: 46%;
+    margin-top: 8px;
+    margin-left: 8%;
+  }
+
+  #colonia {
+    margin-top: 16px;
+    font-size: 38px;
+  }
+
+  #descriptionHeader {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  #buttonHeader {
+    width: 268px;
+    height: 58px;
+    font-size: 21px;
+  }
+
+  #carretelHeader {
+    width: 146px;
+    height: 160px;
+    top: 436px;
+    left: -48px;
+  }
+
+  #fitaHeader {
+    width: 298px;
+    height: 145px;
+    right: -38px;
+    bottom: -6px;
+  }
+
+  #agulhaHeader {
+    display: none;
+  }
+
+  #backgroundHeader {
+    margin-left: 328px;
+    width: 66%;
+    top: 272px;
+  }
+
+  .nav-item {
+    margin-left: 12px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1500px) {
+  #content {
+    width: 46%;
+    margin-top: -4px;
+    margin-left: 8%;
+  }
+
+  #carretelHeader {
+    width: 149px;
+    height: 169px;
+    top: 381px;
+    left: -30px;
+  }
+
+  #buttonHeader {
+    width: 286px;
+    height: 56px;
+    font-size: 22px;
+  }
+
+  #agulhaHeader {
+    right: 576px;
+    transform: rotate(312deg);
+  }
+
+  #fitaHeader {
+    right: -8px;
+    bottom: 28px;
+  }
+
+  #carretelPHeader {
+    width: 62px;
+    height: 62px;
+    top: 98px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  header {
+    height: 800px;
+    clip-path: circle(2500px at 50% -216%);
   }
 }
 
@@ -1783,6 +1951,7 @@ a {
 
   #adressFooter {
     text-align: right;
+    margin-left: 16px;
   }
 }
 
