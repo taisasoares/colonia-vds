@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: #fdf6e2;
+}
+
 img {
   user-select: none;
 }
@@ -1226,6 +1230,38 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   background: #b03658;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+  #titleFotos {
+    margin-top: 48px;
+  }
+
+  .slide img {
+    height: 479px;
+  }
+
+  .nav-dots {
+    padding-top: 502px;
+    margin-bottom: 56px;
+  }
+}
+
+@media only screen and (min-width: 1021px) {
+  #titleFotos {
+    margin-top: 48px;
+  }
+
+  .slide img {
+    width: 56%;
+    height: 500px;
+    border-radius: 30px;
+  }
+
+  .nav-dots {
+    padding-top: 530px;
+    margin-bottom: 56px;
+  }
+}
+
 /* Section Professoras */
 
 #titleProfs {
@@ -1269,6 +1305,81 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   z-index: 10;
 }
 
+@media only screen and (min-width: 1350px) {
+  #titleProfs {
+    margin: 62px 0;
+  }
+
+  #nomeProf {
+    font-size: 28px;
+  }
+
+  #profMarcal {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #profFreitas {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .descProfMarcal {
+    text-align: left;
+  }
+
+  .descProfFreitas {
+    text-align: right;
+  }
+
+  .descProfs {
+    margin: 0;
+    width: 46vw;
+  }
+
+  #profMarcal,
+  #profFreitas {
+    margin: 62px 208px;
+  }
+
+  #marcalImg,
+  #freitasImg {
+    width: 526px;
+  }
+
+  #marcalImg {
+    margin-left: 62px;
+  }
+
+  #freitasImg {
+    margin-right: 62px;
+  }
+
+  #carretelP {
+    width: 86px;
+    height: 86px;
+    top: -26px;
+    left: 124px;
+
+    z-index: 10;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1349px) {
+  #titleProfs {
+    margin: 62px 0;
+  }
+
+  #marcalImg,
+  #freitasImg {
+    width: 50%;
+  }
+
+  #nomeProf {
+    font-size: 28px;
+  }
+}
+
 /* Section Investimento */
 
 #investimento {
@@ -1309,7 +1420,7 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   color: #fff;
 }
 
-/* Imagens Flutuantes > Professoras */
+/* Imagens Flutuantes > Investimentos */
 
 #botoesInvest {
   position: absolute;
@@ -1320,6 +1431,98 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   right: -38px;
 
   transform: rotate(36deg);
+}
+
+@media only screen and (min-width: 968px) {
+  #investimento {
+    margin: 34px 0;
+    padding: 62px;
+  }
+
+  #InvestContainer {
+    margin-top: 28px;
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .invest {
+    text-align: right;
+  }
+
+  #textInvest {
+    margin-left: 78px;
+  }
+
+  .investP {
+    font-size: 24px;
+  }
+
+  #investValor {
+    font-size: 64px;
+    margin: 8px 0;
+  }
+
+  #motivos {
+    font-size: 18px;
+  }
+
+  #buttonInvest {
+    width: 368px;
+    height: 60px;
+    font-size: 21px;
+  }
+
+  #botoesInvest {
+    position: absolute;
+    width: 176px;
+    height: 176px;
+    top: -67px;
+    right: -62px;
+    transform: rotate(36deg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 967px) {
+  #InvestContainer {
+    margin-top: 28px;
+    margin-bottom: 26px;
+  }
+
+  #investimento {
+    width: 100vw;
+    padding: 46px 76px;
+  }
+
+  .investP {
+    font-size: 24px;
+  }
+
+  #investValor {
+    font-size: 64px;
+    margin: 8px 0;
+  }
+
+  #motivos {
+    font-size: 18px;
+  }
+
+  #buttonInvest {
+    width: 368px;
+    height: 60px;
+    font-size: 21px;
+  }
+
+  #botoesInvest {
+    position: absolute;
+    width: 176px;
+    height: 176px;
+    top: -67px;
+    right: -62px;
+    transform: rotate(36deg);
+  }
 }
 
 /* Section FAQ */
@@ -1409,23 +1612,6 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-/* Animação do summary */
-
-/* details[open] summary ~ * {
-  animation: sweep 0.2s ease-in-out;
-}
-
-@keyframes sweep {
-  0% {
-    opacity: 0;
-    margin-top: -10px;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 0px;
-  }
-} */
-
 /* Imagens Flutuantes > FAQ */
 
 #alfinetesSeg {
@@ -1446,6 +1632,51 @@ details > summary::-webkit-details-marker {
   bottom: -26px;
   right: -43px;
   transform: rotate(62deg);
+}
+
+@media only screen and (min-width: 768px) {
+  #titleFaq {
+    margin-top: 26px;
+    margin-bottom: 36px;
+  }
+
+  .faq__content {
+    font-size: 18px;
+  }
+
+  summary {
+    font-size: 26px;
+  }
+
+  .perguntas {
+    max-width: 976px;
+    margin-bottom: 80px;
+  }
+
+  #alfinetesSeg {
+    width: 158px;
+    height: 158px;
+    top: 0px;
+    left: -238px;
+  }
+
+  #tesouraPrecisao {
+    width: 128px;
+    height: 174px;
+    bottom: -30px;
+    right: -186px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1359px) {
+  #alfinetesSeg {
+    top: -61px;
+    left: -6%;
+  }
+
+  #tesouraPrecisao {
+    right: -26px;
+  }
 }
 
 /* Footer */
@@ -1502,4 +1733,79 @@ a {
   font-size: 14px;
 
   margin: 12px 18px 0 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  #footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 48px;
+  }
+
+  #vds {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #vdsLogo2 {
+    width: 198px;
+    height: 238px;
+  }
+
+  #textVds {
+    margin-top: 24px;
+    text-align: left;
+    margin-left: -26px;
+  }
+
+  #textContato {
+    text-align: right;
+  }
+
+  #pContato {
+    margin: 36px 0;
+  }
+
+  #footerAdress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #copyFooter {
+    text-align: left;
+  }
+
+  #adressFooter {
+    text-align: right;
+  }
+}
+
+#topoImg {
+  width: 62px;
+  height: 62px;
+
+  border-radius: 50px;
+
+  box-shadow: 4px 5px 12px 10px rgb(0 0 0 / 5%);
+}
+
+#topo {
+  padding: 10px;
+  position: fixed;
+  top: 80%;
+  right: 66px;
+
+  z-index: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  #topo {
+    display: none;
+  }
 }

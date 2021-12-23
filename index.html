@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <header role="banner">
+    <header role="banner" id="header">
       <nav class="navbar">
         <a href="#" class="nav-logo"><img id="logoRed" src="/imagens/imgBody/vdsLogo.png" alt="logotipo reduzido Vestida de Sonhos"></a>
         <ul class="nav-menu">
@@ -439,40 +439,47 @@
           Nosso time de <span class="blue2">super professoras</span>
         </h2>
 
-        <img id="marcalImg" src="/imagens/imgBody/marcalImg.svg" alt="Foto professora Larissa Marçal"/>
-        <h3 class="green" id="nomeProf">Larissa Marçal</h3>
-        <p class="desc descProfs">
-          Larissa Marçal é costureira há 8 anos. <br/><br/>
-          Técnica em vestuário, e graduada em Design de Moda pelo Instituto Federal de Brasília. Também
-          é professora de modelagem e costura na Vestida de Sonhos há mais de 2
-          anos, e atua em seu ateliê no segmento moda festa. <br/><br/>
-          A costura fez com
-          que ela se descobrisse como profissional, tornando-a apaixonada pelo
-          universo do vestuário. Esse sentimento que a motiva a costurar, bordar
-          e pintar os mais belos sonhos de sua vida.
-        </p>
+        <div id="profMarcal">
+          <img id="marcalImg" src="/imagens/imgBody/marcalImg.svg" alt="Foto professora Larissa Marçal"/>
+          <div id="textProf">
+            <h3 class="green descProfMarcal" id="nomeProf">Larissa Marçal</h3>
+            <p class="desc descProfs descProfMarcal">
+              Larissa Marçal é costureira há 8 anos. <br/><br/>
+              Técnica em vestuário, e graduada em Design de Moda pelo Instituto Federal de Brasília. Também
+              é professora de modelagem e costura na Vestida de Sonhos há mais de 2
+              anos, e atua em seu ateliê no segmento moda festa. <br/><br/>
+              A costura fez com
+              que ela se descobrisse como profissional, tornando-a apaixonada pelo
+              universo do vestuário. Esse sentimento que a motiva a costurar, bordar
+              e pintar os mais belos sonhos de sua vida.
+            </p>
+          </div>
+        </div>
 
-        <img id="freitasImg" src="/imagens/imgBody/freitasImg.svg" alt="Foto professora Larissa Freitas"/>
-        <h3 class="green" id="nomeProf">Larissa Freitas</h3>
-        <p class="desc descProfs">
-          Larissa Freitas é costureira, modelista e figurinista. <br/><br/>
-          Se interessou
-          pela área das artes e da criação desde muito nova, o que acabou lhe
-          trazendo ao ramo do artesanato. Trabalhou muito tempo como
-          figurinista, fazendo figurinos que variavam desde espetáculos em
-          teatros, a performances de rua. Se formou em costura e modelagem pelo
-          Senac e ingressou na produção sob medida, fazendo de roupas infantis a
-          vestidos de festa, corset e alfaiataria. <br/><br/>
-          Está se formando em design de
-          moda pelo Instituto Federal de Brasília. <br/><br/>
-          Hoje Larissa é professora de
-          modelagem na Vestida de Sonhos há mais de 3 anos, corte e costura,
-          pois descobriu seu amor pela arte de ensinar. <br/><br/>
-          Se apaixonou
-          perdidamente pela profissão e pela sensação incrível da troca mútua de
-          conhecimento entre professor e aluno.
-        </p>
-
+        <div id="profFreitas">
+          <img id="freitasImg" src="/imagens/imgBody/freitasImg.svg" alt="Foto professora Larissa Freitas"/>
+          <div id="textProf">
+            <h3 class="green descProfFreitas" id="nomeProf">Larissa Freitas</h3>
+            <p class="desc descProfs descProfFreitas">
+              Larissa Freitas é costureira, modelista e figurinista. <br/><br/>
+              Se interessou
+              pela área das artes e da criação desde muito nova, o que acabou lhe
+              trazendo ao ramo do artesanato. Trabalhou muito tempo como
+              figurinista, fazendo figurinos que variavam desde espetáculos em
+              teatros, a performances de rua. Se formou em costura e modelagem pelo
+              Senac e ingressou na produção sob medida, fazendo de roupas infantis a
+              vestidos de festa, corset e alfaiataria. <br/><br/>
+              Está se formando em design de
+              moda pelo Instituto Federal de Brasília. <br/><br/>
+              Hoje Larissa é professora de
+              modelagem na Vestida de Sonhos há mais de 3 anos, corte e costura,
+              pois descobriu seu amor pela arte de ensinar. <br/><br/>
+              Se apaixonou
+              perdidamente pela profissão e pela sensação incrível da troca mútua de
+              conhecimento entre professor e aluno.
+            </p>
+          </div>
+        </div>
         <!-- Imagens Flutuantes > Professoras -->
         <img id="carretelP" src="/imagens/ilustracoes/carretelP.svg" alt="carretel"/>
       </section>
@@ -480,31 +487,35 @@
       <section id="investimento">
         <h2 class="title">Investimento</h2>
 
-        <p id="motivos">
-          ✅ Aulas presenciais<br />
-          ✅ Atendimento individual e personalizado<br />
-          ✅ Material incluso<br />
-          ✅ Novas experiências<br />
-          ✅ Estímulo à criatividade e atenção<br />
-          ✅ Lindo conjuntinho escolar e peça de roupa só sua<br />
-          ✅ Equipe altamente qualificada<br />
-          ✅ Tardes de diversão e socialização
-        </p>
+        <div id="InvestContainer">
+          <p id="motivos">
+            ✅ Aulas presenciais<br />
+            ✅ Atendimento individual e personalizado<br />
+            ✅ Material incluso<br />
+            ✅ Novas experiências<br />
+            ✅ Estímulo à criatividade e atenção<br />
+            ✅ Lindo conjuntinho escolar e peça de roupa só sua<br />
+            ✅ Equipe altamente qualificada<br />
+            ✅ Tardes de diversão e socialização
+          </p>
 
-        <br />
+          <br />
 
-        <p class="invest pink">Matrícula: R$120,00</p>
-        <p class="invest blue3">garanta já a sua vaga por apenas</p>
-        <p class="invest blue3" id="investValor">
-          2x de <span class="green">R$270,00</span>
-        </p>
-        <p class="invest blue2">ou R$490,00 à vista</p>
+          <div id="textInvest">
+            <p class="invest investP pink">Matrícula: R$120,00</p>
+            <p class="invest investP blue3">garanta já a sua vaga por apenas</p>
+            <p class="invest blue3" id="investValor">
+              2x de <span class="green">R$270,00</span>
+            </p>
+            <p class="invest investP blue2">ou R$490,00 à vista</p>
 
-        <br />
+            <br />
 
-        <button id="buttonInvest" onclick="inscrevase()">
-          Garantir minha vaga
-        </button>
+            <button id="buttonInvest" onclick="inscrevase()">
+              Garantir minha vaga
+            </button>
+          </div>
+        </div>
 
         <!-- Imagens Flutuantes > Depoimentos -->
         <img id="botoesInvest" src="/imagens/ilustracoes/botoesInv.svg" alt="trio de botões"/>
@@ -542,25 +553,31 @@
     </main>
 
     <footer>
-      <div id="vds">
-        <img id="vdsLogo2" src="/imagens/imgBody/vdsLogo2.png" alt="logotipo Vestida de Sonhos"/>
-        <h2 id="h2Vds">Vestida de Sonhos</h2>
-        <p>Vestir um sonho é o que nos inspira</p>
-      </div>
+      <div id="footerContent">
+        <div id="vds">
+          <img id="vdsLogo2" src="/imagens/imgBody/vdsLogo2.png" alt="logotipo Vestida de Sonhos"/>
+          <div id="textVds">
+            <h2 id="h2Vds" >Vestida de Sonhos</h2>
+            <p>Vestir um sonho é o que nos inspira</p>
+          </div>
+        </div>
 
-      <br/>
+        <br/>
 
-      <div id="contato">
-        <h3>Entre em contato</h3>
-        <p><a href="https://wa.me/5561996249674" target="_blank">(61) 99624.9674</a><br/><a href="https://www.vestidadesonhos.com/" target="_blank">www.vestidadesonhos.com</a></p>
+        <div id="contato">
+          <div id="textContato">
+            <h3>Entre em contato</h3>
+            <p id="pContato"><a href="https://wa.me/5561996249674" target="_blank">(61) 99624.9674</a><br/><a href="https://www.vestidadesonhos.com/" target="_blank">www.vestidadesonhos.com</a></p>
+          </div>
 
-        <div id="redes">
-          <a href="https://www.instagram.com/vestidadesonhos/" target="_blank"><img id="instagram" src="/imagens/imgBody/instagram.svg" alt="logo instagram"></a>
-          <a href="https://www.tiktok.com/@costureiraaventureira/?" target="_blank"><img id="tiktok" src="/imagens/imgBody/tiktok.svg" alt="logo tiktok"></a>
-          <a href="https://www.facebook.com/vestidadesonhoss" target="_blank"><img id="facebook" src="/imagens/imgBody/facebook.svg" alt="logo facebook"></a>
-          <a href="https://www.youtube.com/c/VestidadeSonhos" target="_blank"><img id="youtube" src="/imagens/imgBody/youtube.svg" alt="logo youtube"></a>
-          <a href="https://t.me/vestidadesonhos" target="_blank"><img id="telegram" src="/imagens/imgBody/telegram.svg" alt="logo telegram"></a>
-          <a href="https://open.spotify.com/playlist/4UhsFGSaD64hcCVcHQV5Yj" target="_blank"><img id="spotify" src="/imagens/imgBody/spotify.svg" alt="logo spotify"></a>
+          <div id="redes">
+            <a href="https://www.instagram.com/vestidadesonhos/" target="_blank"><img id="instagram" src="/imagens/imgBody/instagram.svg" alt="logo instagram"></a>
+            <a href="https://www.tiktok.com/@costureiraaventureira/?" target="_blank"><img id="tiktok" src="/imagens/imgBody/tiktok.svg" alt="logo tiktok"></a>
+            <a href="https://www.facebook.com/vestidadesonhoss" target="_blank"><img id="facebook" src="/imagens/imgBody/facebook.svg" alt="logo facebook"></a>
+            <a href="https://www.youtube.com/c/VestidadeSonhos" target="_blank"><img id="youtube" src="/imagens/imgBody/youtube.svg" alt="logo youtube"></a>
+            <a href="https://t.me/vestidadesonhos" target="_blank"><img id="telegram" src="/imagens/imgBody/telegram.svg" alt="logo telegram"></a>
+            <a href="https://open.spotify.com/playlist/4UhsFGSaD64hcCVcHQV5Yj" target="_blank"><img id="spotify" src="/imagens/imgBody/spotify.svg" alt="logo spotify"></a>
+          </div>
         </div>
       </div>
 
@@ -568,13 +585,19 @@
         <img id="line" src="/imagens/imgBody/Line.svg" alt="linha"/>
         <br />
         <br />
-        <p>© Copyright Vestida de Sonhos 2022</p>
-        <p>
-          SCLRN 713 - Bloco D, Apartamento 20, Asa Norte - Brasília/DF CNPJ:
-          21.120.048/0001-03
-        </p>
+        <div id="footerAdress">
+          <p id="copyFooter">© Copyright <b>Vestida de Sonhos</b> 2022</p>
+          <p id="adressFooter">
+            SCLRN 713 - Bloco D, Apartamento 20, Asa Norte - Brasília/DF CNPJ:
+            21.120.048/0001-03
+          </p>
+        </div>
       </div>
     </footer>
+
+    <a href="#header" id="topo">
+      <img id="topoImg" src="/imagens/imgBody/seta.svg" alt="seta para cima"/>
+    </a>
 
     <script type="text/javascript" src="script.js"></script>
   </body>
