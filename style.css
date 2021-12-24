@@ -1554,11 +1554,13 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   #profMarcal {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
   }
 
   #profFreitas {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .descProfMarcal {
@@ -1590,6 +1592,7 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
 
   #freitasImg {
     margin-right: 62px;
+    height: fit-content;
   }
 
   #carretelP {
@@ -2036,8 +2039,8 @@ a {
 #topo {
   padding: 10px;
   position: fixed;
-  top: 80%;
-  right: 66px;
+  bottom: 62px;
+  right: 62px;
 
   z-index: 100;
 }
@@ -2045,5 +2048,51 @@ a {
 @media only screen and (max-width: 768px) {
   #topo {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1825px) {
+  body {
+    max-width: 1800px;
+    margin: auto;
+  }
+
+  #meada2 {
+    top: 868px;
+  }
+
+  #maquinaDep {
+    margin-top: 78px;
+  }
+
+  #depoimento {
+    height: 728px;
+    transform: translate(-196%, 0px);
+  }
+
+  .navDep .nextD {
+    right: -78px;
+  }
+
+  .navDep label {
+    top: 18%;
+    width: 36%;
+  }
+
+  .slide img {
+    width: 50%;
+    height: 836px;
+  }
+
+  .nav-dots {
+    padding-top: 886px;
+  }
+
+  .descProfs {
+    width: 32vw;
+  }
+
+  #topo {
+    top: 88%;
   }
 }
