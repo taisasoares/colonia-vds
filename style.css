@@ -2103,3 +2103,17 @@ a {
     top: 88%;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fdf6e2;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f096b1;
+  border-radius: 20px;
+  border: 0px solid #fdf6e2;
+}
