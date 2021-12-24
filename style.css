@@ -542,6 +542,11 @@ button:hover {
     height: 800px;
     clip-path: circle(2500px at 50% -216%);
   }
+
+  #colonia {
+    margin-bottom: 16px;
+    line-height: 106%;
+  }
 }
 
 /* Main */
@@ -1295,10 +1300,12 @@ input:checked + .slideDep-container .navDep label {
   }
 
   #meada2 {
-    width: 124px;
-    height: 106px;
-    top: 194px;
-    left: -46px;
+    width: 202px;
+    height: 123px;
+    top: 616px;
+    left: -286px;
+    transform: rotate(158deg);
+    z-index: 0;
   }
 
   #botoesDep {
