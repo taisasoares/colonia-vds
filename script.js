@@ -21,3 +21,8 @@ window.addEventListener("load", () => {
   document.getElementById("load").style.display = "none";
   document.getElementById("app").style.display = "block";
 });
+
+function showModal() {
+  document.getElementById("modal").style.display = "flex";
+  document.getElementById("app").style.position = "fixed";
+}

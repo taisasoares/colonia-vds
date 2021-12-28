@@ -13,13 +13,37 @@ html {
   scroll-behavior: smooth;
 }
 
-#load {
+#load,
+#modal {
   width: 100%;
   height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+
+  z-index: 100;
+}
+
+.modalContainer {
+  background-color: #fdf6e2;
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .modalContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 }
 
 #app {
