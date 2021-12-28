@@ -28,14 +28,135 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 
+  overflow: hidden;
+
   z-index: 100;
 }
 
 .modalContainer {
   background-color: #fdf6e2;
-  width: 80%;
+  width: 60%;
   height: 80%;
-  border-radius: 25px;
+
+  overflow-y: scroll;
+}
+
+.grid_1{
+  margin: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.required{
+  font-size: 14px;
+  color: #ff0000;
+}
+
+input, textarea{
+  width: 100%;
+  height: 38px;
+  font-size: 16px;
+  cursor: text;
+
+  border: none;
+  border-bottom: #f096b1 2px solid;
+  border-radius: 6px;
+
+  padding:8px 14px;
+  margin-top: 6px;
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+textarea{
+  resize: none;
+  height: 116px;
+
+  padding-right: 8px;
+}
+
+.divForm{
+  margin: 16px;
+  width: 70%;
+}
+
+#titleFormMatri{
+  margin-bottom: 24px;
+}
+
+.inputTurma, .inputFound{
+  width: 4%;
+  cursor: pointer;
+  margin: 0;
+}
+
+.inputKit{
+  width: 10%;
+  margin: 0;
+}
+
+#field_kit{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 16px;
+}
+
+.image-choices{
+  border-radius: 18px;
+}
+
+.image-choices-label{
+  margin: 0;
+  margin-left: 8px;
+}
+
+.choiceKit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_label{
+  font-size: 18px;
+}
+
+#field_ondeConheceuOutros{
+  display: none;
+  width: 70%;
+  margin: 0;
+  margin-left: 14px;
+}
+
+.depth-1{
+  display: flex;
+  align-items: center;
+}
+
+.field-label-inline{
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+#buttonXModal{
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#xImg{
+  width: 48px;
+
+  cursor: pointer;
+
+  border-radius: 50px;
+  box-shadow: 4px 5px 12px 10px rgb(0 0 0 / 5%);
+
+  align-self: end;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2144,15 +2265,15 @@ a {
   }
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 8px;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #fdf6e2;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #f096b1;
   border-radius: 20px;
   border: 0px solid #fdf6e2;
