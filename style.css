@@ -548,7 +548,6 @@ button:hover {
   right: -8px;
   top: -8px;
 
-  background: url(agulha.png);
   transform: rotate(-52deg);
 }
 
@@ -560,7 +559,6 @@ button:hover {
   left: -6px;
   top: 322px;
 
-  background: url(carretelM.png);
   transform: rotate(12deg);
 
   z-index: 1;

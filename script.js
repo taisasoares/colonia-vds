@@ -129,7 +129,7 @@ async function addMatricula() {
   }
 
   try {
-    await fetch(process.env.CSV, {
+    await fetch('https://coloniavds.herokuapp.com/', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
