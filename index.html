@@ -6,6 +6,7 @@
   <title>Colônia de Férias - VDS</title>
   <link rel="icon" href="./imagens/imgBody/vdsLogo.png" type="image/icon type" />
 
+  <meta http-equiv="cache-control" content="no-cache">
   <meta charset="UTF-8" />
   <meta name="description"
     content="A Vestida de Sonhos convida todas as crianças para adentrarem no mundo fantástico da costura na nossa 2ª edição da Colônia de Férias VDS! Venha se aventurar em uma semana de imersão na escola de costura mais mágica do Brasil! " />
@@ -47,8 +48,8 @@
           </label>
           <input type="text" id="field_responsavel" class="input-text" name="responsavel"
             placeholder="Nome do Responsável" required="">
+          <span id="responsavelError" class="formInputError" aria-live="polite"></span>
         </div>
-
 
         <div class="divForm" data-required-field-message="Use um endereço de e-mail válido." data-field-id="email">
           <label for="field_email">
@@ -56,6 +57,7 @@
             <abbr class="required" title="Required">*</abbr>
           </label>
           <input type="email" id="field_email" class="input-text" name="email" placeholder="seu@email.com" required="">
+          <span id="emailError" class="formInputError" aria-live="polite"></span>
         </div>
 
         <div class="divForm" data-required-field-message="Por gentileza, colocar um telefone válido"
@@ -66,6 +68,7 @@
           </label>
           <input type="text" id="field_wpp" class="input-text" name="wpp" step="1" placeholder="(00) 00000-0000"
             pattern="^\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}$" required="">
+          <span id="wppError" class="formInputError" aria-live="polite"></span>
         </div>
 
         <div class="divForm" data-required-field-message="Esse campo é obrigatório." data-field-id="crianca">
@@ -75,6 +78,7 @@
           </label>
           <input type="text" id="field_crianca" class="input-text" name="crianca" placeholder="Nome da criança"
             required="">
+          <span id="criancaError" class="formInputError" aria-live="polite"></span>
         </div>
 
         <div class="divForm" data-required-field-message="Esse campo é obrigatório." data-field-id="turma">
@@ -100,6 +104,7 @@
               </label>
             </li>
           </ul>
+          <span id="turmaError" class="formInputError" aria-live="polite"></span>
         </div>
 
         <div class="divForm" data-required-field-message="Esse campo é obrigatório." data-field-id="kit">
@@ -148,6 +153,7 @@
               </label>
             </li>
           </ul>
+          <span id="kitError" class="formInputError" aria-live="polite"></span>
         </div>
 
         <div class="divForm" data-required-field-message="Esse campo é obrigatório." data-field-id="ondeConheceu">
@@ -188,6 +194,7 @@
               <input type="text" id="field_ondeConheceuOutros" class="input-text" name="ondeConheceuOutros">
             </li>
           </ul>
+          <span id="ondeConheceuError" class="formInputError" aria-live="polite"></span>
         </div>
 
         <div class="divForm" data-required-field-message="Esse campo é obrigatório." data-field-id="obsCrianca">
@@ -197,8 +204,14 @@
           </label>
           <textarea id="field_obsCrianca" class="input-text" name="obsCrianca"
             placeholder="Caso não haja nenhuma observação, favor explicitar" required=""></textarea>
+          <span id="obsCriancaError" class="formInputError" aria-live="polite"></span>
         </div>
+
+        <button id="buttonEnviar" onclick="addMatricula()">
+          <span id="buttonEnviarText">Enviar</span>
+        </button>
       </div>
+
     </div>
   </div>
 
@@ -251,7 +264,7 @@
         <button id="buttonHeader" onclick="showModal()">Inscreva-se</button>
       </div>
 
-      <img id="backgroundHeader" src="./imagens/imgBody/kids.svg" alt="banner crianças" />
+      <img id="backgroundHeader" src="./imagens/imgBody/kids.jpg" alt="banner crianças" />
 
       <!-- Imagens Flutuantes > Header -->
       <img loading=lazy id="carretelHeader" src="./imagens/ilustracoes/carretelM.svg" alt="carretel" />
@@ -275,7 +288,7 @@
 
         <div class="cardSectionPub">
           <div id="card1Pub" class="cardPub">
-            <img loading=lazy class="iconCardPub" src="./imagens/imgBody/iconCard1Pub.svg" alt="icon pessoas" />
+            <img loading=lazy class="iconCardPub" src="./imagens/imgBody/iconCard1Pub.png" alt="icon pessoas" />
             <h3 class="h3Pub">Aulas presenciais</h3>
             <p class="pPub" id="pPub1">
               As aulas serão feitas na sede da escola Vestida de Sonhos para que
@@ -284,7 +297,7 @@
           </div>
 
           <div id="card2Pub" class="cardPub">
-            <img loading=lazy class="iconCardPub" src="./imagens/imgBody/iconCard2Pub.svg" alt="icon alvo" />
+            <img loading=lazy class="iconCardPub" src="./imagens/imgBody/iconCard2Pub.png" alt="icon alvo" />
 
             <h3 class="h3Pub">Turmas de até 7 alunos</h3>
             <p class="pPub" id="pPub2">
@@ -294,7 +307,7 @@
           </div>
 
           <div id="card3Pub" class="cardPub">
-            <img loading=lazy class="iconCardPub" src="./imagens/imgBody/iconCard3Pub.svg" alt="icon estrela" />
+            <img loading=lazy class="iconCardPub" src="./imagens/imgBody/iconCard3Pub.png" alt="icon estrela" />
 
             <h3 class="h3Pub">Atendimento personalizado</h3>
             <p class="pPub">
@@ -327,7 +340,7 @@
           </p>
         </div>
 
-        <img id="principalImgCont" src="./imagens/imgBody/principalImgCont.svg"
+        <img id="principalImgCont" src="./imagens/imgBody/principalImgCont.jpg"
           alt="imagem kits escolares aventureiro e fofurices" />
 
         <!-- Imagens Flutuantes > Conteúdos -->
@@ -364,7 +377,7 @@
               </p>
             </div>
 
-            <img loading=lazy class="imgCardsBeneficios" src="./imagens/imgBody/imgCard1Benef.svg"
+            <img loading=lazy class="imgCardsBeneficios" src="./imagens/imgBody/imgCard1Benef.jpg"
               alt="garoto concentrado costurando na máquina" />
           </div>
 
@@ -379,7 +392,7 @@
               </p>
             </div>
 
-            <img loading=lazy class="imgCardsBeneficios" src="./imagens/imgBody/imgCard2Benef.svg"
+            <img loading=lazy class="imgCardsBeneficios" src="./imagens/imgBody/imgCard2Benef.jpg"
               alt="garota concentrada costurando na máquina" />
           </div>
 
@@ -393,7 +406,7 @@
               </p>
             </div>
 
-            <img loading=lazy class="imgCardsBeneficios" src="./imagens/imgBody/imgCard3Benef.svg"
+            <img loading=lazy class="imgCardsBeneficios" src="./imagens/imgBody/imgCard3Benef.jpg"
               alt="crianças concentradas" />
           </div>
         </div>
@@ -433,7 +446,7 @@
             <input type="radio" name="radio-btn-dep" id="dep-1" checked />
             <li class="slideDep-container">
               <div class="slideDep">
-                <img id="depoimento" src="./imagens/imgBody/depHelena.svg" alt="depoimento Helena" />
+                <img id="depoimento" src="./imagens/imgBody/depHelena.png" alt="depoimento Helena" />
               </div>
               <div class="navDep">
                 <label for="dep-4" class="prevD">&#x2039;</label>
@@ -444,7 +457,7 @@
             <input type="radio" name="radio-btn-dep" id="dep-2" />
             <li class="slideDep-container">
               <div class="slideDep">
-                <img loading=lazy id="depoimento" src="./imagens/imgBody/depMiguel.svg" alt="depoimento Miguel" />
+                <img loading=lazy id="depoimento" src="./imagens/imgBody/depMiguel.png" alt="depoimento Miguel" />
               </div>
               <div class="navDep">
                 <label for="dep-1" class="prevD">&#x2039;</label>
@@ -455,7 +468,7 @@
             <input type="radio" name="radio-btn-dep" id="dep-3" />
             <li class="slideDep-container">
               <div class="slideDep">
-                <img loading=lazy id="depoimento" src="./imagens/imgBody/depEnzo.svg" alt="depoimento Enzo" />
+                <img loading=lazy id="depoimento" src="./imagens/imgBody/depEnzo.png" alt="depoimento Enzo" />
               </div>
               <div class="navDep">
                 <label for="dep-2" class="prevD">&#x2039;</label>
@@ -466,7 +479,7 @@
             <input type="radio" name="radio-btn-dep" id="dep-4" />
             <li class="slideDep-container">
               <div class="slideDep">
-                <img loading=lazy id="depoimento" src="./imagens/imgBody/depIuri.svg" alt="depoimento Iuri" />
+                <img loading=lazy id="depoimento" src="./imagens/imgBody/depIuri.png" alt="depoimento Iuri" />
               </div>
               <div class="navDep">
                 <label for="dep-3" class="prevD">&#x2039;</label>
@@ -620,20 +633,16 @@
             <h3 class="green descProfFreitas" id="nomeProf">Larissa Freitas</h3>
             <p loading=lazy class="desc descProfs descProfFreitas">
               Larissa Freitas é costureira, modelista e figurinista. <br /><br />
-              Se interessou
-              pela área das artes e da criação desde muito nova, o que acabou lhe
+              Se interessou pela área das artes e da criação desde muito nova, o que acabou lhe
               trazendo ao ramo do artesanato. Trabalhou muito tempo como
               figurinista, fazendo figurinos que variavam desde espetáculos em
               teatros, a performances de rua. Se formou em costura e modelagem pelo
               Senac e ingressou na produção sob medida, fazendo de roupas infantis a
               vestidos de festa, corset e alfaiataria. <br /><br />
-              Está se formando em design de
-              moda pelo Instituto Federal de Brasília. <br /><br />
-              Hoje Larissa é professora de
-              modelagem na Vestida de Sonhos há mais de 3 anos, corte e costura,
-              pois descobriu seu amor pela arte de ensinar. <br /><br />
-              Se apaixonou
-              perdidamente pela profissão e pela sensação incrível da troca mútua de
+              Está se formando em design de moda pelo Instituto Federal de Brasília. <br /><br />
+              Hoje Larissa é professora de modelagem, corte e costura na Vestida de Sonhos há mais de 3 anos pois
+              descobriu seu amor pela arte de ensinar.<br /><br />
+              Se apaixonou perdidamente pela profissão e pela sensação incrível da troca mútua de
               conhecimento entre professor e aluno.
             </p>
           </div>
